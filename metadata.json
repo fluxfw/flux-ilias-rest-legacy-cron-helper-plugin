@@ -1,0 +1,15 @@
+{
+  "description": "ILIAS Rest Legacy Cron Plugin Helper (Experimental Alpha Version)",
+  "topics": [
+    "alpha",
+    "cron",
+    "experimental",
+    "helper",
+    "ilias",
+    "legacy",
+    "php",
+    "plugin",
+    "rest"
+  ],
+  "homepage": "https://github.com/fluxapps/flux-ilias-rest-legacy-cron-helper-plugin"
+}
