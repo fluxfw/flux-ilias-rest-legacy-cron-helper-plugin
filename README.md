@@ -1,6 +1,6 @@
 # flux-ilias-rest-legacy-cron-helper-plugin
 
-Experimental Alpha Version
+ILIAS Rest Legacy Cron Plugin Helper
 
 Only needed for ILIAS < 8
 
