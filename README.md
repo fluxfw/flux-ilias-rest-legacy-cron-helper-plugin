@@ -14,4 +14,4 @@ COPY --from=docker-registry.fluxpublisher.ch/flux-ilias-api/rest-legacy-cron-hel
 
 ### Helper Plugin
 
-You need to install [flux-ilias-rest-helper-plugin](https://github.com/flux-eco/flux-ilias-rest-helper-plugin) too
+You need to install [flux-ilias-rest-helper-plugin](https://github.com/flux-caps/flux-ilias-rest-helper-plugin) too
