@@ -1,16 +1,16 @@
 <?php
 
-use FluxIliasRestApi\Adapter\Api\IliasRestApi;
+use FluxIliasRestApi\Libs\FluxIliasApi\Adapter\Api\IliasApi;
 
 class ilflux_ilias_rest_leg_cron_helper_pluginPlugin extends ilCronHookPlugin
 {
 
-    private IliasRestApi $ilias_rest_api;
+    private IliasApi $ilias_api;
 
 
     public function getCronJobInstance(/*string*/ $a_job_id) : ?ilCronJob
     {
-        return $this->ilias_rest_api->getCronJob(
+        return $this->ilias_api->getCronJob(
             $a_job_id
         );
     }
@@ -18,7 +18,7 @@ class ilflux_ilias_rest_leg_cron_helper_pluginPlugin extends ilCronHookPlugin
 
     public function getCronJobInstances() : array
     {
-        return $this->ilias_rest_api->getCronJobs();
+        return $this->ilias_api->getCronJobs();
     }
 
 
@@ -32,6 +32,6 @@ class ilflux_ilias_rest_leg_cron_helper_pluginPlugin extends ilCronHookPlugin
     {
         require_once __DIR__ . "/../autoload.php";
 
-        $this->ilias_rest_api = IliasRestApi::new();
+        $this->ilias_api = IliasApi::new();
     }
 }

@@ -9,7 +9,7 @@ Only needed for ILIAS < 8
 In [flux-ilias](https://github.com/fluxapps/flux-ilias)
 
 ```dockerfile
-COPY --from=docker-registry.fluxpublisher.ch/flux-ilias-rest/legacy-cron-helper-plugin:latest /flux-ilias-rest-legacy-cron-helper-plugin "$ILIAS_WEB_DIR/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin"
+COPY --from=docker-registry.fluxpublisher.ch/flux-ilias-api/rest-legacy-cron-helper-plugin:latest /flux-ilias-rest-legacy-cron-helper-plugin "$ILIAS_WEB_DIR/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin"
 ```
 
 ### Helper Plugin
