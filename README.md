@@ -14,9 +14,15 @@ Only needed for ILIAS < 8
 COPY --from=docker-registry.fluxpublisher.ch/flux-ilias-api/rest-legacy-cron-helper-plugin:latest /flux-ilias-rest-legacy-cron-helper-plugin $ILIAS_WEB_DIR/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin
 ```
 
+or
+
+```dockerfile
+RUN (mkdir -p $ILIAS_WEB_DIR/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && cd $ILIAS_WEB_DIR/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && wget -O - https://docker-registry.fluxpublisher.ch/api/get-build-archive/flux-ilias-api/rest-legacy-cron-helper-plugin | tar -xz --strip-components=1)
+```
+
 #### Other
 
-Download https://docker-registry.fluxpublisher.ch/api/get-build-archive/flux-ilias-api/rest-legacy-cron-helper-plugin and extract to %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin
+Download https://docker-registry.fluxpublisher.ch/api/get-build-archive/flux-ilias-api/rest-legacy-cron-helper-plugin and extract it to %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin
 
 ### Helper Plugin
 
