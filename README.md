@@ -15,12 +15,12 @@ COPY --from=docker-registry.fluxpublisher.ch/flux-ilias-rest-legacy-cron-helper-
 or
 
 ```dockerfile
-RUN (mkdir -p %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && cd %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && wget -O - https://github.com/flux-eco/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz | tar -xz --strip-components=1)
+RUN (mkdir -p %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && cd %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && wget -O - https://github.com/flux-caps/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz | tar -xz --strip-components=1)
 ```
 
 or
 
-Download https://github.com/flux-eco/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz and extract it to `%web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin`
+Download https://github.com/flux-caps/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz and extract it to `%web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin`
 
 ### Helper Plugin
 
