@@ -12,7 +12,6 @@ FROM scratch
 
 LABEL org.opencontainers.image.source="https://github.com/flux-caps/flux-ilias-rest-legacy-cron-helper-plugin"
 LABEL maintainer="fluxlabs <support@fluxlabs.ch> (https://fluxlabs.ch)"
-LABEL flux-docker-registry-rest-api-build-path="/flux-ilias-rest-legacy-cron-helper-plugin.tar.gz"
 
 COPY --from=build /build /
 

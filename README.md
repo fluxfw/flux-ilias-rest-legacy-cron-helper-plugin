@@ -6,8 +6,6 @@ Only needed for ILIAS < 8
 
 ## Installation
 
-Hint: Use `latest` as `%tag%` (or omit it) for get the latest build
-
 ### flux-ilias-rest-legacy-cron-helper-plugin
 
 ```dockerfile
@@ -17,14 +15,12 @@ COPY --from=docker-registry.fluxpublisher.ch/flux-ilias-rest-legacy-cron-helper-
 or
 
 ```dockerfile
-RUN (mkdir -p %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && cd %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && wget -O - https://docker-registry.fluxpublisher.ch/api/get-build-archive/flux-ilias-rest-legacy-cron-helper-plugin.tar.gz?tag=%tag% | tar -xz --strip-components=1)
+RUN (mkdir -p %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && cd %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && wget -O - https://github.com/flux-eco/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz | tar -xz --strip-components=1)
 ```
 
 or
 
-Download https://docker-registry.fluxpublisher.ch/api/get-build-archive/flux-ilias-rest-legacy-cron-helper-plugin.tar.gz?tag=%tag% and extract it to `%web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin`
-
-Hint: If you use `wget` without pipe use `--content-disposition` to get the correct file name
+Download https://github.com/flux-eco/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz and extract it to `%web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin`
 
 ### Helper Plugin
 
