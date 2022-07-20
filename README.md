@@ -8,6 +8,14 @@ Only needed for ILIAS < 8
 
 ### flux-ilias-rest-legacy-cron-helper-plugin
 
+#### In [flux-ilias-ilias-base](https://github.com/fluxfw/flux-ilias-ilias-base)
+
+```dockerfile
+RUN /flux-ilias-ilias-base/bin/download-flux-ilias-rest-legacy-cron-helper-plugin.sh %tag%
+```
+
+#### Other
+
 ```dockerfile
 RUN (mkdir -p %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && cd %web_root%/Customizing/global/plugins/Services/Cron/CronHook/flux_ilias_rest_leg_cron_helper_plugin && wget -O - https://github.com/fluxfw/flux-ilias-rest-legacy-cron-helper-plugin/releases/download/%tag%/flux-ilias-rest-legacy-cron-helper-plugin-%tag%-build.tar.gz | tar -xz --strip-components=1)
 ```
