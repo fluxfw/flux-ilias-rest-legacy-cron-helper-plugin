@@ -11,7 +11,7 @@ Only needed for ILIAS < 8
 #### In [flux-ilias-ilias-base](https://github.com/fluxfw/flux-ilias-ilias-base)
 
 ```dockerfile
-RUN /flux-ilias-ilias-base/bin/download-flux-ilias-rest-legacy-cron-helper-plugin.sh %tag%
+RUN /flux-ilias-ilias-base/bin/install-flux-ilias-rest-legacy-cron-helper-plugin.sh %tag%
 ```
 
 #### Other
